@@ -4,7 +4,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 const app = express()
-app.use(morgan('combine'))
+app.use(morgan('combined')) //Morgan apporte des informations détailées des connexions au serveur
 app.use(bodyParser.json())
 app.use(cors())
 
